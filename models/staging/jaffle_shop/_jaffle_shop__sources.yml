@@ -10,7 +10,7 @@ sources:
         description: raw customer data.
         columns:
           - name: id
-            description: primary key for customer data
+            description: primary key for customers data
             tests:
               - unique
               - not_null
@@ -23,6 +23,7 @@ sources:
           warn_after: {count: 6, period: day}
         columns:
           - name: id
+            description: primary key for orders data
             tests:
               - unique
               - not_null
